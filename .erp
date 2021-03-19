@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<ERPSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <showSceneName>false</showSceneName>
+  <showProjectName>true</showProjectName>
+  <resetOnSceneChange>false</resetOnSceneChange>
+  <debugMode>false</debugMode>
+  <EditorClosed>true</EditorClosed>
+  <LastTimestamp>1616189019</LastTimestamp>
+  <LastSessionID>3216049673035347512</LastSessionID>
+</ERPSettings>
