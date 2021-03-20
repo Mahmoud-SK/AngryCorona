@@ -254,6 +254,38 @@ Transform:
   m_Father: {fileID: 724249537}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &39373738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 39373739}
+  m_Layer: 0
+  m_Name: Visuals
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &39373739
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39373738}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.709523, y: 1.2074517, z: -1.4665099}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1343833255}
+  - {fileID: 1445849842}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &322333870
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,23 +553,31 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 854373785}
     m_Modifications:
+    - target: {fileID: 8051597980301783226, guid: 04297ae769c00f64384a5439a0978188, type: 3}
+      propertyPath: _lanuchForce
+      value: 1700
+      objectReference: {fileID: 0}
     - target: {fileID: 8051597980301783228, guid: 04297ae769c00f64384a5439a0978188, type: 3}
       propertyPath: m_Name
       value: Red Bird
       objectReference: {fileID: 0}
+    - target: {fileID: 8051597980301783229, guid: 04297ae769c00f64384a5439a0978188, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 354e3b168c253dd4fb6a80ed1dad7358, type: 3}
     - target: {fileID: 8051597980301783230, guid: 04297ae769c00f64384a5439a0978188, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8051597980301783230, guid: 04297ae769c00f64384a5439a0978188, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.8406606
+      value: -9.84066
       objectReference: {fileID: 0}
     - target: {fileID: 8051597980301783230, guid: 04297ae769c00f64384a5439a0978188, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5
+      value: 1.49
       objectReference: {fileID: 0}
     - target: {fileID: 8051597980301783230, guid: 04297ae769c00f64384a5439a0978188, type: 3}
       propertyPath: m_LocalPosition.z
@@ -549,15 +589,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8051597980301783230, guid: 04297ae769c00f64384a5439a0978188, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8051597980301783230, guid: 04297ae769c00f64384a5439a0978188, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8051597980301783230, guid: 04297ae769c00f64384a5439a0978188, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8051597980301783230, guid: 04297ae769c00f64384a5439a0978188, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -618,7 +658,7 @@ Transform:
   - {fileID: 1801625429}
   - {fileID: 8696176}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &805019257
 GameObject:
@@ -761,7 +801,7 @@ GameObject:
   m_Component:
   - component: {fileID: 854373785}
   m_Layer: 0
-  m_Name: Monsters
+  m_Name: Bird/Monsters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -781,8 +821,9 @@ Transform:
   - {fileID: 1431424277}
   - {fileID: 1575951776}
   - {fileID: 1533748593}
+  - {fileID: 679831491}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1140618072
 GameObject:
@@ -1082,7 +1123,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 91.46994, y: 13.112947}
+  m_Size: {x: 283.75455, y: 13.112947}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1095,12 +1136,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343833253}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0000006109476, y: 3, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 33.7794, y: 1.7925483, z: 1.4665099}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 39373739}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1431424276
 PrefabInstance:
@@ -1227,7 +1268,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 91.65505, y: 2}
+  m_Size: {x: 284.3288, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1240,12 +1281,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1445849840}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 33.7794, y: -5.207452, z: 1.4665099}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 39373739}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1445849843
 BoxCollider2D:
@@ -1265,7 +1306,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2, y: 2}
-    newSize: {x: 91.65505, y: 2}
+    newSize: {x: 284.3288, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
     adaptiveTiling: 0
@@ -2367,7 +2408,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1187126895600473125, guid: 723bae47357dbb24e8233ce5581dba4a, type: 3}
       propertyPath: _nextLevelName
-      value: Level1
+      value: Level3
       objectReference: {fileID: 0}
     - target: {fileID: 1187126895600473126, guid: 723bae47357dbb24e8233ce5581dba4a, type: 3}
       propertyPath: m_Name

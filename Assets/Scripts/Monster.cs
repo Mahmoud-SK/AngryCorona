@@ -23,16 +23,28 @@ public class Monster : MonoBehaviour
     private bool shouldDieFromCollision(Collision2D collisionInfo)
     {
         if (_hasDied)
+        {
             return false;
-        
+        }
+                    
         Bird bird = collisionInfo.gameObject.GetComponent<Bird>();
 
         if (bird != null)
+        {
             return true;
+        }
+            
            
-        if (collisionInfo.contacts[0].normal.y < -0.5)
+        if (collisionInfo.contacts[0].normal.y < -0.1)
+        {
             return true;
+        }
 
+        if(collisionInfo.contacts[0].normal.x == -4.4925){
+            return true;
+        }
+
+                
         return false;
         
     }
