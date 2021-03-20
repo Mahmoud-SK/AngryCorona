@@ -3,20 +3,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+[SelectionBaseAttribute]
+
 public class Monster : MonoBehaviour
 {
     [SerializeField] Sprite _deadSprite;
     [SerializeField] ParticleSystem _particleSystem;
+    bool _hasDied;
+
     void OnCollisionEnter2D(Collision2D collisionInfo)
     {
         if (shouldDieFromCollision(collisionInfo))
         {
-            Die();
+            StartCoroutine(Die());
         }
     }
     
     private bool shouldDieFromCollision(Collision2D collisionInfo)
     {
+        if (_hasDied)
+            return false;
+        
         Bird bird = collisionInfo.gameObject.GetComponent<Bird>();
 
         if (bird != null)
@@ -29,10 +37,12 @@ public class Monster : MonoBehaviour
         
     }
 
-    void Die()
+    IEnumerator Die()
     {
+        _hasDied = true;
         GetComponent<SpriteRenderer>().sprite = _deadSprite;
         _particleSystem.Play();
-        //gameObject.SetActive(false);
+        yield return new WaitForSeconds(1);
+        gameObject.SetActive(false);
     }
 }
